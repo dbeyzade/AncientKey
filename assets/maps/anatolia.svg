@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Anadolu harita illüstrasyonu">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a" />
+      <stop offset="50%" stop-color="#14213d" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+    <radialGradient id="pulse" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#28f7ff" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#28f7ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)" />
+  <rect width="1200" height="720" fill="url(#pulse)" />
+  <path d="M140 360 Q 220 200 420 260 Q 620 140 840 240 Q 1040 260 1080 380 Q 940 540 720 520 Q 520 620 320 540 Q 160 520 140 360 Z" fill="none" stroke="#28f7ff" stroke-width="6" stroke-linejoin="round" opacity="0.75" />
+  <path d="M320 420 Q 520 360 720 420" fill="none" stroke="#f8d73f" stroke-width="4" stroke-dasharray="12 10" opacity="0.8" />
+  <circle cx="540" cy="340" r="10" fill="#f2545b" />
+  <circle cx="720" cy="420" r="10" fill="#14ffec" />
+  <text x="80" y="90" font-family="'Orbitron', 'Segoe UI', sans-serif" font-size="48" fill="#e9ecef" letter-spacing="4">ANADOLU HARİTASI</text>
+  <text x="80" y="140" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="22" fill="#8cecff">Geç Hitit, Frig, Lidya rotaları</text>
+</svg>

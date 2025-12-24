@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Ege kıyıları antik harita illüstrasyonu">
+  <defs>
+    <linearGradient id="bgAeg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06141b" />
+      <stop offset="50%" stop-color="#0b2535" />
+      <stop offset="100%" stop-color="#0f3a4f" />
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7cf6ff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#7cf6ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bgAeg)" />
+  <rect width="1200" height="720" fill="url(#glow)" />
+  <path d="M260 520 C 360 440 420 380 520 360 C 660 330 780 360 920 300" fill="none" stroke="#00ffe0" stroke-width="7" stroke-linecap="round" opacity="0.8" />
+  <path d="M300 600 Q 420 520 600 540 Q 780 520 940 460" fill="none" stroke="#fca311" stroke-width="6" stroke-dasharray="10 10" opacity="0.7" />
+  <circle cx="420" cy="430" r="12" fill="#ef476f" />
+  <circle cx="620" cy="500" r="10" fill="#06d6a0" />
+  <circle cx="780" cy="420" r="10" fill="#ffd166" />
+  <text x="80" y="90" font-family="'Orbitron', 'Segoe UI', sans-serif" font-size="44" fill="#e9ecef" letter-spacing="4">EGE KIYILARI</text>
+  <text x="80" y="140" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="22" fill="#a8d8ff">İyonya limanları ve kolonileri</text>
+</svg>

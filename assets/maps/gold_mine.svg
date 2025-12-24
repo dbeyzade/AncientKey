@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Gold Mine harita">
+  <defs>
+    <linearGradient id="bgGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1506" />
+      <stop offset="50%" stop-color="#2d2310" />
+      <stop offset="100%" stop-color="#1f1808" />
+    </linearGradient>
+    <radialGradient id="goldPulse" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFA500" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bgGold)" />
+  <rect width="1200" height="720" fill="url(#goldPulse)" />
+  <path d="M 150 360 Q 350 340 600 360 Q 850 380 1050 360" fill="none" stroke="#FFD700" stroke-width="12" opacity="0.7"/>
+  <path d="M 200 280 Q 400 270 650 290" fill="none" stroke="#FFA500" stroke-width="6" opacity="0.5"/>
+  <path d="M 250 440 Q 500 430 750 445" fill="none" stroke="#FFA500" stroke-width="6" opacity="0.5"/>
+  <circle cx="350" cy="345" r="18" fill="#FFD700" opacity="0.8"/>
+  <circle cx="600" cy="360" r="24" fill="#FFD700" opacity="0.9"/>
+  <circle cx="850" cy="375" r="16" fill="#FFD700" opacity="0.75"/>
+  <rect x="340" y="240" width="20" height="130" fill="#00FFFF" opacity="0.4"/>
+  <rect x="590" y="220" width="20" height="160" fill="#00FFFF" opacity="0.5"/>
+  <rect x="840" y="250" width="20" height="145" fill="#00FFFF" opacity="0.4"/>
+  <circle cx="350" cy="345" r="50" fill="none" stroke="#f2545b" stroke-width="3" opacity="0.5"/>
+  <circle cx="600" cy="360" r="65" fill="none" stroke="#f2545b" stroke-width="3" opacity="0.6"/>
+  <text x="80" y="90" font-family="'Orbitron', sans-serif" font-size="48" fill="#FFD700">GOLD MINE</text>
+  <text x="80" y="140" font-family="sans-serif" font-size="22" fill="#FFA500">Detailed Geology Sheet XXIV</text>
+</svg>
