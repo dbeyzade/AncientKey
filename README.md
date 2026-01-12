@@ -2,6 +2,16 @@
 
 Konum tabanlı tarihi haritaları siber/neo-fütüristik bir tasarım ile gösteren Flutter uygulaması.
 
+[![App Store](https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white)](https://apps.apple.com/app/ancientkey)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+
+## 📜 Legal Documents
+
+- [Privacy Policy (English)](PRIVACY_POLICY_EN.md)
+- [Gizlilik Politikası (Türkçe)](PRIVACY_POLICY.md)
+- [Terms of Service](TERMS_OF_SERVICE.md)
+- [End User License Agreement (EULA)](EULA.md)
+
 ## Özellikler
 - GPS ile yakınındaki antik yol ve kent katmanlarını ön plana çıkarır.
 - Harita listesi, arama çubuğu (adres/il/antik kent) ve favorilere kaydetme.
