@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AncientKey - Destek ve Yardım</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a0033 0%, #2d0052 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #b366ff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6b2fbf 0%, #8e44ad 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #6b2fbf;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8e44ad;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            color: #6b2fbf;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-item h3:hover {
+            color: #8e44ad;
+        }
+
+        .faq-item p {
+            color: #666;
+            margin-left: 1.5rem;
+        }
+
+        .support-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .support-card {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ebebeb 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #6b2fbf;
+            transition: transform 0.3s;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .support-card h3 {
+            color: #6b2fbf;
+            margin-bottom: 1rem;
+        }
+
+        .support-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .support-card a {
+            display: inline-block;
+            background: #6b2fbf;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .support-card a:hover {
+            background: #8e44ad;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: #6b2fbf;
+            box-shadow: 0 0 5px rgba(107, 47, 191, 0.3);
+        }
+
+        .contact-form button {
+            background: #6b2fbf;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #8e44ad;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+
+        .footer a {
+            color: #b366ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+
+        .alert strong {
+            color: #856404;
+        }
+
+        .response-time {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            color: #155724;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #6b2fbf;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .navbar a {
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .support-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>🔑 AncientKey</h1>
+            <div>
+                <a href="#faq">SSS</a>
+                <a href="#support">Destek</a>
+                <a href="#contact">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>AncientKey Destek Merkezi</h1>
+            <p>Sorunuz mu var? Buradan yardım bulabilirsiniz!</p>
+        </div>
+
+        <!-- Cevap Süresi -->
+        <div class="response-time">
+            <strong>⏱️ Destek Süresi:</strong> Tüm destek talepleri 24 saat içinde yanıtlanır.
+        </div>
+
+        <!-- Sık Sorulan Sorular -->
+        <div class="section" id="faq">
+            <h2>❓ Sık Sorulan Sorular (SSS)</h2>
+            
+            <div class="faq-item">
+                <h3>🔧 Uygulamayı nasıl başlatırım?</h3>
+                <p>AncientKey uygulamasını App Store'dan indirdikten sonra simgesine tıklayarak açabilirsiniz. İlk açılışında konum erişim izni isteyecektir - harita ve konum tabanlı özellikleri kullanabilmek için izin vermeniz gerekmektedir.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📍 Harita üzerinde neler yapabilirim?</h3>
+                <p>AncientKey üzerinde antik medeniyetlere ait haritaları keşfedebilir, not ekleyebilir, fotoğraf paylaşabilir, yorumlar yazabilir ve çeşitli özellikleri kullanabilirsiniz. Lütfen tüm içeriğiniz uygun olduğundan emin olun.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🛡️ Uygunsuz içeriği nasıl bildireceğim?</h3>
+                <p>Tüm yorumlar, notlar ve fotoğraflar üzerinde "Rapor Et" düğmesi bulunmaktadır. Uygunsuz içerik gördüğünüzde bu düğmeyi tıklayarak, uygunsuz içeriğin nedenini belirterek rapor edebilirsiniz. Raporlar 24 saat içinde incelenir.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🚫 Rahatsız edici bir kullanıcıyı nasıl engelle?</h3>
+                <p>Kullanıcının yorumları, notları veya fotoğrafları üzerinde "Kullanıcıyı Engelle" seçeneğini kullanarak o kullanıcıyı engelleyebilirsiniz. Engellenen kullanıcılar artık sizin hiçbir içeriğinize erişemeyecek ve yönetici otomatik olarak bilgilendirilecektir.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>💾 Verilerim güvenli mi?</h3>
+                <p>Evet, AncientKey kullanıcı verilerini korumak için endüstri standardı şifreleme kullanır. Gizlilik politikamız hakkında daha fazla bilgi için lütfen <a href="https://github.com/dbeyzade/AncientKey/blob/main/PRIVACY_POLICY.md" target="_blank">Gizlilik Politikası</a>'nı okuyun.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📱 Uygulamada sorun yaşıyorum</h3>
+                <p>Aşağıdaki adımları deneyiniz:
+                <br/>1. Uygulamayı tamamen kapatın ve yeniden açın
+                <br/>2. İnternet bağlantınızı kontrol edin
+                <br/>3. Uygulamayı en son sürüme güncelleyin
+                <br/>4. Sorun devam ederse, aşağıdaki destek seçeneklerini kullanın</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>⚖️ Yasal ve Şart Hakkında Bilgi</h3>
+                <p>AncientKey kullanırken <a href="https://github.com/dbeyzade/AncientKey/blob/main/EULA.md" target="_blank">Kullanıcı Lisans Sözleşmesi (EULA)</a> ve <a href="https://github.com/dbeyzade/AncientKey/blob/main/TERMS_OF_SERVICE.md" target="_blank">Hizmet Şartları</a>'nı kabul etmiş sayılırsınız.</p>
+            </div>
+        </div>
+
+        <!-- Destek Seçenekleri -->
+        <div class="section" id="support">
+            <h2>🤝 Destek Seçenekleri</h2>
+            <p style="margin-bottom: 2rem;">Aşağıdaki yollardan bize ulaşabilirsiniz:</p>
+            
+            <div class="support-options">
+                <div class="support-card">
+                    <h3>📧 Email Destek</h3>
+                    <p>Detaylı sorun ve sorular için doğrudan e-posta gönderin.</p>
+                    <a href="mailto:dogukan.beyzade@icloud.com">E-posta Gönder</a>
+                </div>
+
+                <div class="support-card">
+                    <h3>🐛 Hata Raporu</h3>
+                    <p>Teknik sorunları ve hataları GitHub üzerinden bildirebilirsiniz.</p>
+                    <a href="https://github.com/dbeyzade/AncientKey/issues" target="_blank">GitHub Issues</a>
+                </div>
+
+                <div class="support-card">
+                    <h3>💬 Geri Bildirim</h3>
+                    <p>Özellik önerileri ve genel geri bildiriminizi bizimle paylaşın.</p>
+                    <a href="mailto:dogukan.beyzade@icloud.com?subject=AncientKey Feedback">Geri Bildirim Gönder</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div class="section" id="contact">
+            <h2>✉️ İletişim Formu</h2>
+            <p style="margin-bottom: 1.5rem;">Destek talebiniz hakkında ayrıntılı bilgi sağlamak için bu formu kullanın:</p>
+            
+            <form class="contact-form" id="supportForm">
+                <input 
+                    type="text" 
+                    id="name"
+                    placeholder="Adınız" 
+                    required
+                >
+                
+                <input 
+                    type="email" 
+                    id="email"
+                    placeholder="E-posta Adresiniz" 
+                    required
+                >
+
+                <select id="category" required>
+                    <option value="">Kategori Seçin</option>
+                    <option value="bug">🐛 Hata Raporu</option>
+                    <option value="feature">✨ Özellik Önerisi</option>
+                    <option value="content">⚠️ İçerik Raporu</option>
+                    <option value="account">👤 Hesap Sorunu</option>
+                    <option value="other">❓ Diğer</option>
+                </select>
+
+                <textarea 
+                    id="message"
+                    placeholder="Sorunuz veya talebiniz..." 
+                    rows="6" 
+                    required
+                ></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+
+            <div class="alert" style="margin-top: 1.5rem;">
+                <strong>Dikkat:</strong> Lütfen mümkün olduğunca detaylı bilgi sağlayın. Cihaz modeli, uygulama sürümü ve hatanın nasıl oluştuğu gibi bilgiler bize hızlı yardım etmenize yardımcı olacaktır.
+            </div>
+        </div>
+
+        <!-- İçerik Moderasyon Politikası -->
+        <div class="section">
+            <h2>🛡️ İçerik Moderasyon Politikası</h2>
+            
+            <div class="alert">
+                <strong>Sıfır Tolerans Politikası:</strong> AncientKey uygunsuz, taciz edici veya kötüye kullanan içeriğe karşı sıfır tolerans politikası izler.
+            </div>
+
+            <h3 style="color: #6b2fbf; margin-top: 1.5rem; margin-bottom: 0.8rem;">Uygunsuz İçerik Örnekleri:</h3>
+            <ul style="margin-left: 2rem; color: #666; line-height: 2;">
+                <li>Taciz, tehdit veya aşağılayıcı içerik</li>
+                <li>Nefret söylemi veya ayrımcı dil</li>
+                <li>Cinsel veya müstehcen içerik</li>
+                <li>Spam veya aldatıcı bilgiler</li>
+                <li>Telif hakkı ihlali içeren malzeme</li>
+                <li>Diğer kullanıcıların kişisel bilgileri</li>
+            </ul>
+
+            <h3 style="color: #6b2fbf; margin-top: 1.5rem; margin-bottom: 0.8rem;">Prosedür:</h3>
+            <ol style="margin-left: 2rem; color: #666; line-height: 2;">
+                <li><strong>Raporlama:</strong> Uygunsuz içeriği "Rapor Et" düğmesi ile bildirin</li>
+                <li><strong>İnceleme:</strong> Yönetici 24 saat içinde raporu inceler</li>
+                <li><strong>Harekete Geçme:</strong> Uygunsuz içerik hemen kaldırılır</li>
+                <li><strong>Sonuç:</strong> İhlal eden kullanıcı uyarılır veya engellenir</li>
+                <li><strong>Tekrar:</strong> Tekrarlayan ihlallere karşı hesap askıya alınır</li>
+            </ol>
+
+            <div class="response-time">
+                <strong>Yanıt Süresi:</strong> Tüm içerik raporları <strong>24 saat içinde</strong> incelenir ve gerekli işlemler yapılır.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2026 AncientKey. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 1rem;">
+                <a href="https://github.com/dbeyzade/AncientKey" target="_blank">GitHub</a> | 
+                <a href="https://github.com/dbeyzade/AncientKey/blob/main/PRIVACY_POLICY.md" target="_blank">Gizlilik Politikası</a> | 
+                <a href="https://github.com/dbeyzade/AncientKey/blob/main/EULA.md" target="_blank">EULA</a> | 
+                <a href="https://github.com/dbeyzade/AncientKey/blob/main/TERMS_OF_SERVICE.md" target="_blank">Hizmet Şartları</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                Destek E-posta: <a href="mailto:dogukan.beyzade@icloud.com">dogukan.beyzade@icloud.com</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                if (answer.style.display === 'none' || answer.style.display === '') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+
+        // Form submission handler
+        const form = document.getElementById('supportForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const category = document.getElementById('category').value;
+                const message = document.getElementById('message').value;
+                
+                // Send email via mailto
+                const subject = `AncientKey Support [${category}]`;
+                const body = `Name: ${name}\nEmail: ${email}\nCategory: ${category}\n\nMessage:\n${message}`;
+                
+                window.location.href = `mailto:dogukan.beyzade@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                alert('Mesajınız e-posta programında açılacak. Lütfen gönder düğmesine basın!');
+            });
+        }
+    </script>
+</body>
+</html>
