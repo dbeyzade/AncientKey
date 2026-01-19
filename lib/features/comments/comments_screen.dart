@@ -187,7 +187,7 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
                   icon: const Icon(Icons.block, size: 20),
                   color: Colors.red,
                   tooltip: 'Kullanıcıyı Engelle',
-                  onPressed: () => _blockUser(comment.userId),
+                  onPressed: () => _blockUser('user_${comment.id}'),
                 ),
                 IconButton(
                   icon: const Icon(Icons.delete, size: 20),

@@ -123,7 +123,7 @@ class _UserContentViewScreenState extends ConsumerState<UserContentViewScreen>
                           Text('Kullanıcıyı Engelle'),
                         ],
                       ),
-                      onTap: () => _blockUser(note.userId),
+                      onTap: () => _blockUser('user_${note.id}'),
                     ),
                     PopupMenuItem(
                       child: const Row(
