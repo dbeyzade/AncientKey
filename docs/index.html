@@ -371,22 +371,22 @@
             <h2>✉️ İletişim Formu</h2>
             <p style="margin-bottom: 1.5rem;">Destek talebiniz hakkında ayrıntılı bilgi sağlamak için bu formu kullanın:</p>
             
-            <form class="contact-form" action="https://formspree.io/f/xvggbkkq" method="POST">
+            <form class="contact-form" id="supportForm">
                 <input 
                     type="text" 
-                    name="name" 
+                    id="name"
                     placeholder="Adınız" 
                     required
                 >
                 
                 <input 
                     type="email" 
-                    name="email" 
+                    id="email"
                     placeholder="E-posta Adresiniz" 
                     required
                 >
 
-                <select name="category" required>
+                <select id="category" required>
                     <option value="">Kategori Seçin</option>
                     <option value="bug">🐛 Hata Raporu</option>
                     <option value="feature">✨ Özellik Önerisi</option>
@@ -396,7 +396,7 @@
                 </select>
 
                 <textarea 
-                    name="message" 
+                    id="message"
                     placeholder="Sorunuz veya talebiniz..." 
                     rows="6" 
                     required
@@ -470,13 +470,24 @@
             });
         });
 
-        // Form submission success message
-        const form = document.querySelector('.contact-form');
+        // Form submission handler
+        const form = document.getElementById('supportForm');
         if (form) {
-            form.addEventListener('submit', function() {
-                setTimeout(() => {
-                    alert('Mesajınız başarıyla gönderildi! 24 saat içinde sizinle iletişime geçeceğiz.');
-                }, 1000);
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const category = document.getElementById('category').value;
+                const message = document.getElementById('message').value;
+                
+                // Send email via mailto
+                const subject = `AncientKey Support [${category}]`;
+                const body = `Name: ${name}\nEmail: ${email}\nCategory: ${category}\n\nMessage:\n${message}`;
+                
+                window.location.href = `mailto:dogukan.beyzade@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                alert('Mesajınız e-posta programında açılacak. Lütfen gönder düğmesine basın!');
             });
         }
     </script>

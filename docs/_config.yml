@@ -1,0 +1,5 @@
+# GitHub Pages configuration
+baseurl: /AncientKey/docs
+url: https://dbeyzade.github.io
+theme: null
+plugins: []
