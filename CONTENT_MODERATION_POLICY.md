@@ -120,7 +120,7 @@ AncientKey developers are committed to:
 
 For questions about this policy or to report serious violations, contact:
 - **Email**: dogukan.beyzade@icloud.com
-- **Support**: https://dbeyzade.github.io/AncientKey/docs/
+- **Support**: https://cdn.jsdelivr.net/gh/dbeyzade/AncientKey@main/support.html
 - **GitHub**: https://github.com/dbeyzade/AncientKey/issues
 
 ## Policy Changes

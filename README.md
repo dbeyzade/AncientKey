@@ -12,6 +12,15 @@ Konum tabanlı tarihi haritaları siber/neo-fütüristik bir tasarım ile göste
 - [Terms of Service](TERMS_OF_SERVICE.md)
 - [End User License Agreement (EULA)](EULA.md)
 
+## 🆘 Support & Help
+
+For support, questions, and to report content issues:
+- **Support Website**: https://cdn.jsdelivr.net/gh/dbeyzade/AncientKey@main/support.html
+- **Email**: dogukan.beyzade@icloud.com
+- **GitHub Issues**: https://github.com/dbeyzade/AncientKey/issues
+
+Please note: Our support team responds to all requests within **24 hours**.
+
 ## Özellikler
 - GPS ile yakınındaki antik yol ve kent katmanlarını ön plana çıkarır.
 - Harita listesi, arama çubuğu (adres/il/antik kent) ve favorilere kaydetme.

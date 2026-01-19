@@ -23,9 +23,31 @@ You agree not to:
 
 The Application and all content, features, and functionality are owned by AncientKey and are protected by international copyright, trademark, and other intellectual property laws.
 
-## 5. User Content
+## 5. User-Generated Content Policy
 
-Any content you create, upload, or share through the Application remains your property. By using the Application, you grant AncientKey a non-exclusive license to use such content solely for providing the Application's services.
+### Content Standards
+By uploading, posting, or sharing any content through the Application (including but not limited to comments, notes, photos, and reviews), you agree that:
+
+- **No Objectionable Content**: You will NOT create or share content that is:
+  - Abusive, harassing, threatening, or discriminatory
+  - Sexually explicit or adult-oriented
+  - Hateful or promotes violence
+  - Spam, scams, or misleading
+  - Violates intellectual property rights
+  - Contains personal information of others without consent
+
+### Zero Tolerance Policy
+AncientKey maintains a **ZERO TOLERANCE POLICY** for objectionable content and abusive user behavior. Violations will result in immediate content removal and account suspension.
+
+### User Rights & Moderation
+- **Flag Content**: Users can report objectionable content using the "Report" button on any comment or note
+- **Block Users**: Users can block other users to prevent unwanted interactions
+- **Developer Response**: AncientKey commits to reviewing reported content within **24 hours** and taking appropriate action
+- **Content Removal**: Violating content will be removed immediately from all users' feeds
+- **User Ejection**: Users who repeatedly violate this policy will be permanently suspended from the Application
+
+### Your Content License
+Any content you create, upload, or share through the Application remains your property. By using the Application, you grant AncientKey a non-exclusive license to use such content solely for providing the Application's services and enforcing this policy.
 
 ## 6. Disclaimer of Warranties
 
@@ -50,7 +72,8 @@ This Agreement shall be governed by and construed in accordance with the laws of
 ## 11. Contact Information
 
 For questions about this Agreement, please contact us at:
-- GitHub Issues: https://github.com/dbeyzade/AncientKey/issues
+- Support: https://cdn.jsdelivr.net/gh/dbeyzade/AncientKey@main/support.html
+- GitHub: https://github.com/dbeyzade/AncientKey
 - Email: dogukan.beyzade@icloud.com
 
 ---
