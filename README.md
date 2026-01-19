@@ -15,8 +15,8 @@ Konum tabanlı tarihi haritaları siber/neo-fütüristik bir tasarım ile göste
 ## 🆘 Support & Help
 
 For support, questions, and to report content issues:
-- **Support Website**: https://cdn.jsdelivr.net/gh/dbeyzade/AncientKey@main/support.html
-- **Email**: dogukan.beyzade@icloud.com
+- **Support Website**: https://dbeyzade.github.io/AncientKey/
+- **Email**: dbeyzade@hotmail.com
 - **GitHub Issues**: https://github.com/dbeyzade/AncientKey/issues
 
 Please note: Our support team responds to all requests within **24 hours**.

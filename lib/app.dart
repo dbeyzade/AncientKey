@@ -12,8 +12,26 @@ class AncientKeyApp extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AncientKey',
-      theme: AppTheme.theme(),
-      home: const IntroVideoScreen(),
+      theme: _getSafeTheme(),
+      home: const SafeHome(),
     );
+  }
+
+  ThemeData _getSafeTheme() {
+    try {
+      return AppTheme.theme();
+    } catch (e) {
+      debugPrint('Theme initialization error: $e');
+      return ThemeData.dark();
+    }
+  }
+}
+
+class SafeHome extends StatelessWidget {
+  const SafeHome({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const IntroVideoScreen();
   }
 }

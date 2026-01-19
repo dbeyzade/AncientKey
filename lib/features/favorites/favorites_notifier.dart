@@ -1,5 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../core/services/achievement_service.dart';
+import '../../core/database/app_database.dart';
 
 class FavoritesNotifier extends StateNotifier<Set<String>> {
   FavoritesNotifier() : super(const {});
@@ -25,6 +27,12 @@ class FavoritesNotifier extends StateNotifier<Set<String>> {
     }
     state = next;
     await _prefs?.setStringList(_prefsKey, state.toList());
+    
+    // Check favorite achievement
+    if (state.length >= 10) {
+      final achievementService = AchievementService(AppDatabase());
+      await achievementService.unlockAchievement('favorite_collector');
+    }
   }
 }
 

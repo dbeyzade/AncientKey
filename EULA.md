@@ -72,9 +72,9 @@ This Agreement shall be governed by and construed in accordance with the laws of
 ## 11. Contact Information
 
 For questions about this Agreement, please contact us at:
-- Support: https://cdn.jsdelivr.net/gh/dbeyzade/AncientKey@main/support.html
+- Support: https://dbeyzade.github.io/AncientKey/
 - GitHub: https://github.com/dbeyzade/AncientKey
-- Email: dogukan.beyzade@icloud.com
+- Email: dbeyzade@hotmail.com
 
 ---
 

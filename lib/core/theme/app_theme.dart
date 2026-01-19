@@ -7,6 +7,11 @@ class AppTheme {
   static const Color neonCyan = Color(0xFF21F8FF);
   static const Color neonPink = Color(0xFFFF3CAC);
   static const Color neonAmber = Color(0xFFF4B860);
+  
+  // Ancient features colors
+  static const Color darkBlue = Color(0xFF0D1B2A);
+  static const Color gold = Color(0xFFFFD700);
+  static const Color primaryGold = Color(0xFFFFD700);
 
   static ThemeData theme() {
     final base = ThemeData.dark(useMaterial3: true);

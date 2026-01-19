@@ -30,6 +30,18 @@
 	<string>GPS ile çevrendeki antik güzergahları gösterebilmek için konum erişimi gerekir.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Yakındaki antik haritaları gösterebilmek için konumuna ihtiyaç duyuyoruz.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Tarihi yerlerin fotoğraflarını çekmek ve AR görünüm için kamera erişimi gerekir.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Fotoğraflarınızı kaydetmek ve paylaşmak için galeri erişimi gerekir.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Filtreli fotoğrafları galeriye kaydetmek için izin gerekir.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Sesli notlar için mikrofon erişimi gerekir.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -48,6 +60,12 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSBonjourServiceTypes</key>
+	<array>
+		<string>_http._tcp</string>
 	</array>
 </dict>
 </plist>
